@@ -4,6 +4,11 @@
   "globals": {},
   "rules": {
     "indent": ["error", 2],
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/destructuring-assignment": 1,
+    "react/prop-types": 1
+  },
+  "parserOptions": {
+    "ecmaVersion": 8
   }
 }
