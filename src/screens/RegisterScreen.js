@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, TouchableOpacity } from 'react-native';
 
 class RegisterScreen extends Component {
   constructor(props) {
@@ -10,7 +10,16 @@ class RegisterScreen extends Component {
   render() {
     return (
       <View>
-        <Text>RegisterScreen</Text>
+        <Text>SignIn</Text>
+        <TouchableOpacity
+          onPress={() => {
+            this.props.navigation.navigate('SignIn');
+          }}
+        >
+          <View>
+            <Text>SignIn</Text>
+          </View>
+        </TouchableOpacity>
       </View>
     );
   }
